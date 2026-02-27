@@ -63,7 +63,7 @@ lib/
 
 ### **Step 1: Clone the Repository**
 ```sh
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/your-morpheuss/weather-app.git
 cd weather-app
 ```
 
@@ -81,26 +81,6 @@ flutter run
 ```sh
 flutter build web
 ```
-
----
-
-## 🔗 API Configuration
-1. Get your API key from [OpenWeather](https://openweathermap.org/api).
-2. Add the following configuration in your project:
-
-```dart
-class ApiConstants {
-  static const baseUrl = 'https://api.openweathermap.org/data/2.5';
-  static const weeklyWeatherUrl =
-      'https://api.open-meteo.com/v1/forecast?current=&daily=weather_code,temperature_2m_max,temperature_2m_min&timezone=auto';
-  static const String apiKey = '09f5eaf0b6f7b30bc5a4c69be2950d52';
-}
-```
-
-3. Ensure the API key is loaded correctly in `services/weather_service.dart`.
-
----
-
 ## 📦 Dependencies Used
 
 ```yaml
